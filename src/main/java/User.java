@@ -10,6 +10,9 @@ public class User implements Entity {
         this.name = name;
     }
 
+    public User() {
+    }
+
     public int getId() {
         return id;
     }
@@ -24,5 +27,13 @@ public class User implements Entity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

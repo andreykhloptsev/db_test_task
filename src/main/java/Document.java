@@ -79,4 +79,17 @@ public class Document  {
     public void setLink_doc(Document link_doc) {
         this.link_doc = link_doc;
     }
+
+    @Override
+    public String toString() {
+        return "Document{" +
+                "id=" + id +
+                ", user=" + user +
+                ", tshort='" + tshort + '\'' +
+                ", date='" + date + '\'' +
+                ", status=" + status +
+                ", category=" + category +
+                ", link_doc=" + link_doc +
+                '}';
+    }
 }
